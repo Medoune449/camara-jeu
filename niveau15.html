@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="niveau.css">
+    <title>Devinette +</title>
+</head>
+<body>
+     <h3>Devinette +</h3>
+    
+      <center>
+    <h5><button><a href="paiement.html"><font color="black">Offrez-nous un café</a><br /></font></button></h5>
+      </center>
+
+            <center>
+     <audio src="music.mp4" controls="controls" autoplay="autoplay" loop="loop"></audio>
+             </center>
+    <!-- Ecran initial -->
+    <div id="pantalla-inicial">
+        <p>Culture Générale</p>
+        <button class="btn" onclick="comenzarJuego()">START GAME</button>
+    </div>
+
+    <!-- Ecran de jeu -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/ad.svg" alt="" id="imgBandera">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Ecran final -->
+    <div id="pantalla-final">
+        <h2>CORRECT: <span id="numCorrectas"></span></h2>
+        <h2>INCORRECT: <span id="numIncorrectas"></span></h2>
+        <button class="btn" onclick="volverAlInicio()">Play Again</button>
+    </div>
+
+    <footer>Apprendre en S'amusant!!!</footer>
+    
+    <script src="script15.js"></script>
+</body>
+</html>
