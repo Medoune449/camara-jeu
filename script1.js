@@ -105,7 +105,7 @@ function terminarJuego(){
     }else{
                    alert("Sorry for you");
                    
-              let targetURL ="niveau1.html";//rejouer le niveau
+              let targetURL ="index.html";//rejouer le niveau
                let newURL =document.createElement('a');
                newURL.href =targetURL;
                document.body.appendChild(newURL);
