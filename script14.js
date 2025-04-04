@@ -1,6 +1,6 @@
 //Chargement des images dans un tableau et ce sera affiché par ordre
 let banderas = ["a microbe.jpg", "to faint.jpg", "to vomit.png", "to sneeze.jpg", "a neurologist.jpg",
-                "To-feel-sick.png", "headache.jpg", "smallpox.jpg", "prescription.jpg", "Diarrhea.png"];
+                "To-feel-sick.png", "headache.jpg", "Smallpox.jpg", "prescription.jpg", "Diarrhea.png"];
 
 //Enregistrement des options correct
 let correcta = [2,0,1,0,2,1,0,2,2,1];
