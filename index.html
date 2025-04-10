@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="niveau.css">
-    <title>Devinette +</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Website Portfolio</title>
+	<link rel="stylesheet" href="css/style.css">
+     <script src="script.js" defer></script>
+
+     <!-- box icons link -->
+      <link rel="stylesheet"
+     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- remix icons link -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h3>Devinette +</h3>
-    
-      <center>
-    <h5><button><a href="paiement.html"><font color="black">Offrez-nous un café</a><br /></font></button></h5>
-      </center>
+     <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">x</a><!--bouton fermé -->
+          <ul><!--menu -->
+             <li><a href="index.html">Accueil</a></li> 
+             <li><a href="frame1.html">Portfolio</a></li>
+             <li><a href="slider1.html">Images</a></li>
+             <li><a href="frame2.html">Vidéos</a></li>
+             <li><a href="frame3.html">Services</a></li>
+             <li><a href="frame4.html">Contact</a></li> 
+          </ul>
+     </div>
 
-             <center>
-     <audio src="music.mp4" controls="controls" autoplay="autoplay" loop="loop"></audio>
-             </center>
-    <!-- Ecran initial -->
-    <div id="pantalla-inicial">
-        <p>Culture Générale</p>
-        <button class="btn" onclick="comenzarJuego()">START GAME</button>
+       <a href="#" id="openBtn"><!--bouton open -->
+           <span class="burger-icon"><!--bouton burger cliquable -->
+           <span></span><!--1er trait du menu-icon -->
+            <span></span><!--2em trait du menu-icon -->   
+             <span></span><!--3em trait du menu-icon --> 
+             <a href="#" class=nav-btn>Site</a> 
+          </span>
+          
+     </a>
+       <hr /><!--permet de faire une ligne horizontale à la fin d'une partie -->
+
+       <section class="hero">
+     <div class="hero-text">
+     <h6>Bonjour, <span>je m'appelle</span></h6>  
+     <h1><span>Medoune</span> Camara</h1>
+     <h4>Je suis <span class="input"></span></h4>
+     <p>Je suis un étudiant passionné de l'informatique depuis trois ans actuellement.<br>
+         Et j'ai des compétences dans le développement web, le design et bien plus durant ma formation. <br>
+        </p>
+
+     <div class="hero-icons">
+          <a href="https://www.tiktok.com/@youngboy8231"><i class="ri-tiktok-fill"></i></a><!--icon tiktok -->
+          <a href="https://www.youtube.com/@Cvtech-c6r"><i class="ri-youtube-fill"></i></a><!--icon youtube-->
+          <a href="https://wa.me/+221774267744"><i class="ri-whatsapp-line"></i></a><!--icon whatsapp-->    
+     </div>
+
+     <div class="hero-btn">
+          <a href="MedouneCV.pdf" class="btn">Télécharger CV</a>
+          <a href="motivation1.pdf" class="btn2">Lettre de motivation</a>
+          
+     </div>
+
+     </div>
+     <div class="hero-img">
+          <img src="img/Medoune1.png">
+     </div>
+    </section>
+    <div class="scroll">
+     <a href="index.html"><i class="ri-scroll-to-bottom-fill"></i>Scroll Bottom</a>
     </div>
 
-    <!-- Ecran de jeu -->
-    <div class="pantalla-juego" id="pantalla-juego">
-        <img src="img/ad.svg" alt="" id="imgBandera">
-        <div class="opciones">
-            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
-                <div class="letra" id="l0">A</div>
-                <div class="nombre" id="n0">OPCION A</div>
-            </div>
-            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
-                <div class="letra" id="l1">B</div>
-                <div class="nombre" id="n1">OPCION B</div>
-            </div>
-            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
-                <div class="letra" id="l2">C</div>
-                <div class="nombre" id="n2">OPCION C</div>
-            </div>
-        </div>
-    </div>
-    <!-- Ecran final -->
-    <div id="pantalla-final">
-        <h2>CORRECT: <span id="numCorrectas"></span></h2>
-        <h2>INCORRECT: <span id="numIncorrectas"></span></h2>
-        <button class="btn" onclick="volverAlInicio()">Play Again</button>
-    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript">
+     var typed = new Typed(".input", {
+          strings:["Developpeur Web.","Designer."],
+          typeSpeed: 80,
+          backSpeed:70,
+          loop:true
+     });
+     
+    </script>
 
-    <footer>Apprendre en S'amusant!!!</footer>
-    
-    <script src="script1.js"></script>
 </body>
 </html>
